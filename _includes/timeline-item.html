@@ -1,0 +1,16 @@
+ {% assign events = site.data.events | sort: 'date' %}
+ {% for event in events %}
+  {% assign index = forloop.index | modulo: 2 %}
+  {% if index == 0 %}
+    <div class="timeline-item right">
+  {% else %}
+    <div class="timeline-item left">
+  {% endif %}
+    <div class="content">
+      <h1 style="color: black; font-style: italic;">{{ event.date }}</h1>
+      <a href="{{ event.link }}"><h2>{{ event.title }}</h2></a>
+      <img src="{{ event.image }}" alt="{{ event.title }}" />
+      <p>{{ event.description }}</p>
+    </div>
+  </div>
+{% endfor %}
