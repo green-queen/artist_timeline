@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Arial", sans-serif;
+  font-weight: 300;
   background-color: #fefefe;
   color: #000000;
 }
@@ -23,7 +24,6 @@ body::before {
   width: 2px;
   height: 2400px;
   background: #000000;
-  top: 20px;
   z-index: 0;
   margin-left: 50%;
   margin-top: 800px;
